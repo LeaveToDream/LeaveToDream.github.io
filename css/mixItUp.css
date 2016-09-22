@@ -1,0 +1,121 @@
+@font-face {
+	font-family: Montserrat;
+	src: url("fontM.otf") format("opentype");
+}
+#mixItUp{
+	margin: auto;
+	width : 1140px;
+	background-color:blue;
+}
+#mixItUp .item{
+	color:white;
+	float:left;
+	width:33%;
+	height:230px;
+	overflow:hidden;
+}
+#mixItUp .img img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+#mixItUp .hover {
+	text-align: center;
+	bottom: 233px;
+	height: 100%;
+	width: 100%;
+	background-color: #CB0000;
+	background: linear-gradient(to right, #BA0000 0%,#FF0000 35%,#FF0000 68%,#CB0000 100%);
+	transition: opacity 400ms ease-in-out;
+	opacity:0;
+}
+#mixItUp .hover:hover {
+	opacity : 1;
+}
+#mixItUp .vertical-align {
+	display: inline-flex; /* contexte sur le parent */
+	flex-direction: column; /* direction d'affichage verticale */
+	justify-content: center; /* alignement vertical */
+}
+#mixItUp .link {
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	background-color: transparent;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #fff;
+	cursor: pointer;
+}
+#mixItUp .link:hover {
+	background-color:white;
+	color: #CB0000;
+}
+#mixItUp .angle, #mixItUp .arrow{
+	position: absolute;
+	width: 50px;
+	left: 0;
+}
+#mixItUp .angle {
+	font-size: 2em;
+	margin-left: 2px;
+	bottom: 9px;
+}
+#mixItUp .arrow {
+	font-size: 1.4em;
+	margin-left: 0px;
+	bottom: 14px;
+}
+#mixItUp .name {
+	font-family: 'Montserrat' ;
+	display:block;
+	font-size: 24px;
+	margin-top: 10px;
+}
+#mixItUp .badge {
+	z-index: 10;
+	font-family: 'Roboto';
+	font-size: 14px;
+	text-transform: uppercase;
+	position: absolute;
+	letter-spacing: 1px;
+	font-weight: 500;
+	bottom: 10px;
+	left: 15px;
+}
+#mixItUp .cadre {
+	pointer-events: none;
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
+}
+#mixItUp .cadre div{
+	height: 208px;
+	border: 1px dotted white;
+	margin : 10px ;
+
+}
+/* MixItUp Css Init */
+#mixItUp .mix{
+	display: none;
+}
+
+/* MixItUp Menu Css */
+#mixItUpMenu {
+	text-align: center;
+	width: 100%;
+}
+#mixItUpMenu .btn {
+	height: 40px;
+	border-radius: 20px;
+	font-size: 18px ;
+}
+#mixItUpMenu .btn:focus {
+	outline-width:0px; 
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(77,145,254,1);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(77,145,254,1);
+	box-shadow: 0px 0px 5px 2px rgba(77,145,254,1);
+}
