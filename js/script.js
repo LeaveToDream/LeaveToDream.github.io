@@ -4,13 +4,25 @@ $(document).ready(function(e) {
 		e.stopPropagation();
 	});
 
+	$(document).ready(function(e) {
+		// Instantiate fancyBox:
+		$(".fancybox").fancybox({
+			padding: 10,
+			helpers: {
+				overlay: {
+					locked: false
+				}
+			}
+		});
+	});
+
 	var lis = $('.TheMenu > li');
 	menu_focus( lis[0], 1 );
 
 	/***************
 	* = Hover text *
 	* Hover text for the last slide
-	***************/
+	***************
 	$('.with-hover-text').hover(
 		function(e) {
 			$(this).css('overflow', 'visible');
@@ -43,7 +55,7 @@ $(document).ready(function(e) {
 					}
 				);
 		}
-	);
+	);*/
 
 	var img_loaded = 0;
 	var j_images = [];
@@ -156,7 +168,7 @@ function menu_focus( element, i ) {
 	$('.TheMenu > li').removeClass('active');
 	$(element).addClass('active');
 
-	var icon = $(element).find('.icon');
+	var icon = $(element).find('.fa');
 
 	var left_pos = icon.offset().left - $('.TheMenu').offset().left;
 	var el_width = icon.width() + $(element).find('.text').width() + 10;
@@ -186,7 +198,7 @@ function enable_arrows( dataslide ) {
 }
 
 /*************
-* = Parallax *
+* = Parallax, that is actualy not a parallax, depending on the definition *
 *************/
 jQuery(document).ready(function ($) {
 	//Cache some variables
@@ -232,7 +244,7 @@ jQuery(document).ready(function ($) {
 
 	menu_item.hover(
 		function(e) {
-			var icon = $(this).find('.icon');
+			var icon = $(this).find('.fa');
 
 			var left_pos = icon.offset().left - $('.nav').offset().left;
 			var el_width = icon.width() + $(this).find('.text').width() + 10;
@@ -340,4 +352,75 @@ jQuery(document).ready(function ($) {
 			}
 		}
 	});
+});
+/******************
+* = mixItUp setup  *
+******************/
+$(document).ready(function(e) {
+	$.ajax({
+	  url: 'data.json',
+	  dataType: 'json',
+	  success: function (response) {
+	  	var i = 1;
+	    response.web.forEach(function(e){
+	    	fillWorks(e,"web",i);
+	    	i+=1;
+	    });
+	    // Instantiate MixItUp:
+		$('#mixItUp').mixItUp();
+	  }
+	});
+});
+function fillWorks(data, genType,id){
+	var bloc=`
+		<div class="item mix `+data.type.toLowerCase()+` `+genType.toLowerCase()+`" data-myorder="`+id+`">
+			<div class="img">
+				<img src="images\\projects\\`+id+`.jpg">
+			</div>
+			<div class="pins">
+				`+genType+`
+			</div>
+			<div class="hover vertical-align">
+				<div class="inHover">
+					<!--<a class="link vertical-align modalProject(`+id+`)">
+						<i class="fa fa-arrows-alt fa-1x arrow"></i>
+					</a>-->
+					<a class="link vertical-align" href="`+data.link+`" target="_blank">
+						<i class="fa fa-angle-right fa-1x angle"></i>
+					</a>
+					<span class="name">`+data.name+`</span>
+				</div>
+			</div>
+			<div class="cadre">
+				<div></div>
+			</div>
+		</div>`;
+	$( "#mixItUp" ).append( bloc );
+}
+/************************
+* = ScrollReveal setup  *
+************************/
+function triggerReveals() {
+    sr.reveal('.bottomReveal', {
+        origin: 'bottom'
+    }).reveal('.leftReveal', {
+        origin: 'left'
+    }).reveal('.rightReveal', {
+        origin: 'right'
+    }).reveal('.topReveal', {
+        origin: 'top'
+    }).reveal('.scaleReveal, .title-row', {
+        origin: 'top',
+        scale: 0.6
+    });
+}
+$(document).ready(function(e) {
+	// Instantiate ScrollReveal once pace finished loading
+	if (typeof sr == 'undefined') {
+	    window.sr = ScrollReveal({
+	        duration: 1500,
+	        delay: 50
+	    });
+	} // In case i forget, pace monitors the global loading of the page !
+	Pace.once(Pace.done, triggerReveals());
 });

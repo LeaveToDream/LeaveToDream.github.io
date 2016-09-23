@@ -181,8 +181,7 @@ body {
 		margin-right: 12px;
 	}
 
-	.nav li[data-slide="1"],
-	.nav li[data-slide="6"] {
+	.nav li[data-slide="1"] {
 		background-color: #2f2f2f;
 	}
 
@@ -199,7 +198,11 @@ body {
 	}
 
 	.nav li[data-slide="5"] {
-		background-color: #e67e22;
+		background-color: #2f2f2f;
+	}
+
+	.nav li[data-slide="6"] {
+		background-color: #5bc0de;
 	}
 
 	.navbar-brand {
@@ -220,37 +223,12 @@ body {
 }
 
 #slide-1 {
-	/*background-image: url('../images/bg1.jpg');*/
 	color: #ffffff;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: 100%;
-	background-attachment: relative;
-	background-position: center center;
+	min-height: 643px;
 }
 
 #slide-1 h1 {
 	padding-top: 130px;
-}
-
-@media (max-width: 991px) {
-	#slide-1 {
-		background-position: -70% 0, 170% 0;
-	}
-}
-
-@media (max-width: 767px) {
-	#slide-1 {
-		background-image: none;
-		background-color: black ;
-	}
 }
 
 	#home-row-1,
@@ -270,19 +248,19 @@ body {
 		font-size: 25px;
 	}
 
-	#home-row-2 .col-12 {
+	#home-row-2 .col-xs-12 {
 		height: 232px;
 		padding-top: 30px;
 	}
 
-	#home-row-2 .col-12 .home-hover {
+	#home-row-2 .col-xs-12 .home-hover {
 		height: 166px;
 		overflow: hidden;
 		padding-top: 26px;
 		transition: all ease-in .5s;
 	}
 
-	#home-row-2 .col-12 .home-hover:hover {
+	#home-row-2 .col-xs-12 .home-hover:hover {
 		height: 166px;
 		padding-top: 0;
 	}
@@ -309,8 +287,19 @@ body {
 #slide-2 {
 	background-color: #B51818;
 	color: #e4e6e5;
-	margin-top: 12em;
+	margin-top: 2.5em;
+	z-index: 5;
 }
+	@media (min-width: 768px) {
+		#slide-2 {
+			margin-top: 1em;
+		}
+	}
+	@media (min-width: 992px) {
+		#slide-2 {
+			margin-top: 3em;
+		}
+	}
 
 	.title-row {
 		font-size: 45px;
@@ -358,6 +347,14 @@ body {
 		color: white;
 	}
 
+	#slide-2 a {
+		color :#4ad7f9;
+	}
+
+	#slide-2 a:hover{
+		color:#5bc0de;
+	}
+
 
 @media (max-width: 767px) {
 	.title-row {
@@ -394,7 +391,7 @@ body {
 	width: 100%;
 }
 
-	#slide-3 .col-12 {
+	#slide-3 .col-xs-12 {
 		display: inline-block;
 		height: 451px;
 		margin: 0;
@@ -422,7 +419,7 @@ body {
 		width: 100% !important;
 	}
 
-	#slide-3 .col-12 {
+	#slide-3 .col-xs-12 {
 		height: auto;
 		width: 50%
 	}
@@ -437,7 +434,7 @@ body {
 }
 
 @media (max-width: 767px) {
-	#slide-3 .col-12 {
+	#slide-3 .col-xs-12 {
 		width: 100%;
 	}
 }
@@ -490,11 +487,10 @@ body {
 		padding-top: 125px;
 	}
 
-	#contact-row-4 .col-12 {
+	#contact-row-4 .with-hover-text {
 		height: 175px;
-		overflow: hidden;
-		padding-top: 20px;
-		transition: all ease-in .5s;
+		transition: margin cubic-bezier(0,1.25,.46,1.75) .4s;
+		margin-top: 20px;
 	}
 
 	#contact-row-4 img {
@@ -504,16 +500,21 @@ body {
 		max-width: 100%;
 	}
 
-	#contact-row-4 .col-12:hover {
-		height: 175px;
-		padding-top: 0;
+	#contact-row-4 .with-hover-text:hover {
+		margin-top: 0;
 	}
 
-	#contact-row-4 .col-12 .hover-text {
-		display: none;
+	#contact-row-4 .col-xs-12 .hover-text {
+		opacity: 0;
+		transition: opacity .2s ease-in;
 		font-size: 16px;
 	}
-
+	#contact-row-4 .col-xs-12:hover .hover-text {
+		opacity: 1;
+	}
+	#contact-row-4 .with-hover-text .fa {
+		font-size: 6em;
+	}
 #slide-7 {
 	background-color: #e4e6e5;
 	color: #4e4e4e;
@@ -530,9 +531,9 @@ body {
 	z-index: 99999;
 }
 
-.with-hover-text span {
+/*.with-hover-text span {
 	display: none;
-}
+}*/
 
 .zoom {
 	background-image: url('../images/zoom.png');
@@ -624,7 +625,6 @@ body {
 .large-header {
 	position: relative;
 	width: 100%;
-	background: #333;
 	overflow: hidden;
 	background-size: cover;
 	background-position: center center;
@@ -632,10 +632,7 @@ body {
 }
 
 .demo-1 .large-header{
-	background-image: url('../images/demo-1-bg-gradient.jpg');
-}
- .1 .large-header {
-	background-image: url('../images/demo-1-bg-gradient.jpg');
+	/*background-image: url('../images/demo-1-bg-gradient.jpg');*/
 }
 
 .front {
@@ -656,27 +653,40 @@ body {
 
 
 /*
- * Author: John Calvet
- * URL: http://LeaveToDream.github.io/
- *
- */
- .tabNotaLink {
- 	padding: 10px 15px;
- }
- .nav-tabs > .tabLink > a {
-	 border-radius: 4px;
- }
- .tabHome{
-	 margin : 2em 0 ;
- }
- .carousel-inner, .carouselNotInner{
-	 height : 10em;
-	 border-radius: 5px;
- }
- .carouselNotInner img{
-	 max-width: 100%;
- }
- .carousel-arrow {
-	 position: relative;
-	 top: 7.5em;
- }
+* Author: John Calvet
+* URL: http://LeaveToDream.github.io/
+*
+*/
+.tabNotaLink {
+	padding: 10px 15px;
+}
+.nav-tabs > .tabLink > a {
+	border-radius: 4px;
+}
+.tabHome{
+	margin : 2em 0 ;
+}
+.carousel-inner, .carouselNotInner{
+	height : 10em;
+	border-radius: 5px;
+}
+.carouselNotInner img{
+	max-width: 100%;
+}
+.carousel-arrow {
+	position: relative;
+	top: 7.5em;
+}
+#navbar {
+	margin-right: auto;
+    margin-left: auto;
+}
+@media (max-width : 768px) {
+	#containerSemiFlex {
+		padding-right: 0;
+    	padding-left: 0;
+	}
+}
+.bottomReveal, .leftReveal, .rightReveal, .topReveal, .scaleReveal, .title-row {
+	visibility: hidden;
+}

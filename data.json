@@ -1,0 +1,59 @@
+{
+	"web":[{
+		   "name":"JardinDeTara", 
+		   "type":"Static",
+		   "state":"Complete",
+		   "link":"http://www.jardindetara.fr",
+		   "desc":"Description coming soon ..."
+	   }, 
+	   {
+		   "name":"KLVCreation", 
+		   "type":"OnePage",
+		   "state":"Developing",
+		   "link":"http://www.KLVCreation.github.io",
+		   "desc":"Description coming soon ..."
+	   }, 
+	   {
+		   "name":"Resto", 
+		   "type":"OnePage",
+		   "state":"Dropped, Complete",
+		   "link":"http://klvhouse.org/sandbox/Resto/",
+		   "desc":"Description coming soon ..."
+	   }, 
+	   {
+		   "name":"Coach", 
+		   "type":"OnePage",
+		   "state":"Dropped, Unfinished",
+		   "link":"http://klvhouse.org/sandbox/coach/",
+		   "desc":"Description coming soon ..."
+	   }, 
+	   {
+		   "name":"Epic Heroes TCG", 
+		   "type":"OnePage",
+		   "state":"Developing",
+		   "link":"javascript:return false;",
+		   "desc":"Description coming soon ..."
+	   }, 
+	   {
+		   "name":"Equi-m", 
+		   "type":"Classic",
+		   "state":"Complete",
+		   "link":"http://www.equim.fr",
+		   "desc":"Description coming soon ..."
+	   }, 
+	   {
+		   "name":"ToitsDeProvence", 
+		   "type":"Classic",
+		   "state":"Developing",
+		   "link":"javascript:return false;",
+		   "desc":"Description coming soon ..."
+	   }, 
+	   {
+		   "name":"Imapix Anim", 
+		   "type":"Classic",
+		   "state":"Dropped, Unfinished",
+		   "link":"javascript:return false;",
+		   "desc":"Description coming soon ..."
+	   }
+	]
+}
