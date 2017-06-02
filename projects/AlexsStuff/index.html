@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+	<head lang="en">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<title>KLV Creation</title>
+		<meta name="description" content="Home Page for John KLV and his creations" />
+		<meta name="keywords" content="themes, bootstrap, free, templates, bootstrap 3, freebie, web dev, KLV, Calvet,"/>
+		<meta property="og:title" content=""/>
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-v=2.1.5.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href='css/GoogleApiTitilliumWeb.css'/> <!-- Police utilisée --> <!-- importé depuis google api-->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/mixItUp.css"/>
+		<link rel="stylesheet" type="text/css" href="css/pace.theme.corner.css"/>
+
+		<link rel="prefetch" href="images/zoom.png">
+
+	</head>
+
+	<body>
+		<div class="navbar navbar-default navbar-fixed-top" data-activeslide="1">
+			<div id="containerSemiFlex" class="container">
+
+				<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse navbar-responsive-collapse">
+					<ul class="nav row TheMenu">
+						<li data-slide="1" class="col-xs-12 col-sm-2"><a id="menu-link-1" href="#slide-1" title="Next Section"><span class="fa fa-home"></span> <span class="text">HOME</span></a></li>
+						<li data-slide="2" class="col-xs-12 col-sm-2"><a id="menu-link-2" href="#slide-2" title="Next Section"><span class="fa fa-user"></span> <span class="text">PRESENTATION</span></a></li>
+						<li data-slide="3" class="col-xs-12 col-sm-2"><a id="menu-link-3" href="#slide-3" title="Next Section"><span class="fa fa-briefcase"></span> <span class="text">PORTFOLIO</span></a></li>
+						<li data-slide="4" class="col-xs-12 col-sm-2"><a id="menu-link-4" href="#slide-4" title="Next Section"><span class="fa fa-gears"></span> <span class="text">ACTIVITÉES</span></a></li>
+						<li data-slide="5" class="col-xs-12 col-sm-2"><a id="menu-link-5" href="#slide-5" title="Next Section"><span class="fa fa-heart"></span> <span class="text">RÉALISATION</span></a></li>
+                        <li data-slide="6" class="col-xs-12 col-sm-2"><a id="menu-link-6" href="#slide-6" title="Next Section"><span class="fa fa-envelope"></span> <span class="text">CONTACT</span></a></li>
+                    </ul>
+					<div class="row">
+						<div class="col-sm-2 active-menu"></div>
+					</div>
+				</div><!-- /.nav-collapse -->
+			</div><!-- /.container -->
+		</div><!-- /.navbar -->
+
+
+		<!-- === Arrows === -->
+		<div id="arrows">
+			<div id="arrow-up" class="disabled"></div>
+			<div id="arrow-down"></div>
+			<div id="arrow-left" class="disabled" style="display: none;"></div>
+			<div id="arrow-right" class="disabled" style="display: none;"></div>
+		</div><!-- /.arrows -->
+
+		<!-- Generic Modal -->
+		<div id="genericModal" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="genericModalTitle"></h4>
+					</div>
+					<div class="modal-body">
+						<p id="genericModalLabel">A word about this project : </p>
+						<p id="genericModalText"></p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		<!-- /modal -->
+
+		<!-- === MAIN Background === -->
+		<div class="slide story" id="slide-1" data-slide="1">
+            <div class="parralax" id="slide-1-parralax">
+
+            </div>
+			<div class="container front">
+				<div id="home-row-1" class="row clearfix">
+					<div class="col-xs-12">
+						<h1 class="font-semibold">Alex's <span class="font-thin">Stuff</span></h1>
+						<h4 class="font-thin">Your <span class="font-semibold">personnal creator</span> based in Marseille.</h4>
+						<br>
+						<br>
+					</div><!-- /col-xs-12 -->
+				</div><!-- /row -->
+				<!--<div id="home-row-2" class="row clearfix">
+					<div class="hidden-xs col-sm-4"><div class="home-hover navigation-slide" data-slide="4"><img src="images/s2.png"></div><span>PROFESSIONAL</span></div>
+					<div class="hidden-xs col-sm-4"><div class="home-hover navigation-slide" data-slide="2"><img src="images/s1.png"></div><span>FRIENDLY</span></div>
+					<div class="hidden-xs col-sm-4"><div class="home-hover navigation-slide" data-slide="3"><img src="images/s3.png"></div><span>SUITABLE</span></div>
+				</div><!-- /row -->
+			</div><!-- /container -->
+		</div><!-- /slide1 -->
+
+		<!-- === Slide 2 === -->
+		<div class="slide story" id="slide-2" data-slide="2">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-lg-7">
+						<h1>Présentation</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa ex,
+							suscipit id ligula at, luctus tempus dolor. Etiam sodales posuere ligula, eu aliquet nunc commodo
+							vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa ex,
+                            suscipit id ligula at, luctus tempus dolor. Etiam sodales posuere ligula, eu aliquet nunc commodo
+                            vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa ex,
+                            suscipit id ligula at, luctus tempus dolor. Etiam sodales posuere ligula, eu aliquet nunc commodo
+                            vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+					</div>
+					<div class="col-xs-12 col-lg-5">
+						<a href="http://placeholder.com"><img class="prezImage" src="http://via.placeholder.com/600x400"></a>
+					</div>
+				</div><!-- /row -->
+			</div><!-- /container -->
+		</div><!-- /slide2 -->
+
+		<!-- === Slide 3 - Portfolio -->
+		<div class="slide story" id="slide-3" data-slide="3">
+			<div class="row">
+                <div class="col-xs-12">
+                    <h1>Mur de création</h1>
+                </div>
+			</div><!-- /row -->
+            <div id="freewallContainer">
+                <div id="freewall">
+                    <div class="item wallitem"></div>
+                    <div class="item wallitem"></div>
+                    <div class="item wallitem"></div>
+                    <div class="item wallitem"></div>
+                    <div class="item wallitem"></div>
+                    <div class="item wallitem"></div>
+                    <div class="item wallitem"></div>
+                    <div class="item wallitem"></div>
+                    <div class="item wallitem"></div>
+                    <div class="item wallitem"></div>
+                    <div class="item wallitem"></div>
+                    <div class="item wallitem"></div>
+                    <div class="item wallitem"></div>
+                    <div class="item wallitem"></div>
+                    <div class="item wallitem"></div>
+                    <div class="item wallitem"></div>
+                    <div class="item wallitem"></div>
+                </div>
+            </div>
+            <div id="freewallFooter">
+            </div>
+		</div><!-- /slide3 -->
+
+		<!-- === Slide 4 - Process === -->
+		<div class="slide story" id="slide-4" data-slide="4">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+                        <h1>Activitées principales</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-lg-4">
+						<div class="actCircle" id="act-1">
+							<img src="./images/act1.png"/>
+						</div>
+						<div>
+							<h3>Activité 1</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem.</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-lg-4">
+						<div id="act-2">
+                            <img src="./images/act2.png">
+						</div>
+						<div>
+							<h3>Activité 2</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem.</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-lg-4">
+						<div id="act-3">
+                            <img src="./images/act3.png">
+						</div>
+						<div>
+							<h3>Activité 3</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- /slide4 -->
+
+		<!-- === Slide 5 / Réalisation === -->
+		<div class="slide story" id="slide-5" data-slide="5">
+			<div class="container">
+				<div class="row title-row">
+					<div class="col-xs-12 font-thin">Réalisations, au <span class="font-semibold">pas</span> à <span class="font-semibold">pas</span></div>
+				</div><!-- /row -->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-lg-4 rea">
+                        <a href="http://placeholder.com"><img src="http://via.placeholder.com/800x600"></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-4 rea">
+                        <a href="http://placeholder.com"><img src="http://via.placeholder.com/800x600"></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-4 rea">
+                        <a href="http://placeholder.com"><img src="http://via.placeholder.com/800x600"></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-4 rea">
+                        <a href="http://placeholder.com"><img src="http://via.placeholder.com/800x600"></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-4 rea">
+                        <a href="http://placeholder.com"><img src="http://via.placeholder.com/800x600"></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-4 rea">
+                        <a href="http://placeholder.com"><img src="http://via.placeholder.com/800x600"></a>
+                    </div>
+                </div>
+			</div> <!-- /container -->
+		</div><!-- /slide5 -->
+
+		<!-- === Slide 6 / Avis === -->
+		<div class="slide story" id="slide-6" data-slide="6">
+			<div class="container">
+				<div class="row title-row">
+					<div class="col-xs-12 font-light">Avis</div>
+				</div><!-- /row -->
+                <i class="fa fa-4x fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem.</p>
+
+                <p>Lucie Woaye-Hune - Basse</p>
+
+			</div><!-- /container -->
+		</div><!-- /Slide 6 -->
+
+        <!-- === Slide 7 / Contact === -->
+        <div class="slide story" id="slide-7" data-slide="7">
+            <div id="movingStarContainer">
+                <div id="movingStars-header">
+                    <canvas id="movingStars-canvas"> </canvas>
+                </div>
+            </div>
+            <div class="container">
+                <div id="notStarsContainer">
+                    <div class="row title-row">
+                        <div class="col-xs-12 font-light">Contact</div>
+                    </div><!-- /row -->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-4" style="color:white">
+                            <div class="contact-bubble">
+                                <div class="contact-img">
+                                    <i class="fa fa-3x fa-phone" aria-hidden="true"></i>
+                                </div>
+                                <div class="contact-txt">
+                                    <h3>Téléphone</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4" style="color:white">
+                            <div class="contact-bubble">
+                                <div class="contact-img">
+                                    <i class="fa fa-3x fa-map-marker" aria-hidden="true"></i>
+                                </div>
+                                <div class="contact-txt">
+                                    <h3>Adresse</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4" style="color:white">
+                            <div class="contact-bubble">
+                                <div class="contact-img">
+                                    <i class="fa fa-3x fa-envelope" aria-hidden="true"></i>
+                                </div>
+                                <div class="contact-txt">
+                                    <h3>Adresse</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /container -->
+            </div>
+        </div><!-- /Slide 7 -->
+
+        <!-- === Slide 8 / Footer === -->
+        <div class="slide footer" id="slide-8" data-slide="8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 font-light">
+                        <h2>Alex's Stuff</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem.</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div><!-- /row -->
+            </div><!-- /container -->
+        </div><!-- /Slide 8 -->
+
+	</body>
+
+	<!-- SCRIPTS -->
+	<script type="text/javascript" src="js/html5shiv.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox.pack-v=2.1.5.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+    <!-- Movings stars scripts -->
+    <script type="text/javascript" src="js/TweenLite.min.js"></script>
+    <script type="text/javascript" src="js/EasePack.min.js"></script>
+    <script type="text/javascript" src="js/rAF.js"></script>
+    <script type="text/javascript" src="js/movingStars.js"></script>
+
+    <!-- Cools scripts -->
+    <!-- Pace is for loading animation --><script type="text/javascript" src="js/pace.min.js"></script> <!-- -->
+    <!-- Scrollreveal add animations on first display --><script type="text/javascript" src="js/scrollreveal.min.js"></script> <!-- -->
+    <!-- Parallax is for parallax --><script type="text/javascript" src="js/parallax.min.js"></script> <!-- -->
+    <!-- FreeWall is for flex display--><script type="text/javascript" src="js/freewall.js"></script>
+</html>
